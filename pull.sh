@@ -10,3 +10,5 @@ git reset --hard
 git pull origin $BRANCH
 cd -
 
+jekyll build --source /source --destination /site
+
