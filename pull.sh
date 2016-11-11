@@ -8,7 +8,10 @@ cd /source
 git checkout $BRANCH
 git reset --hard
 git pull origin $BRANCH
-cd -
+gem install bundle
+bundle update
 
-jekyll build --source /source --destination /site
+bundle exec jekyll build --destination /site
+
+cd -
 

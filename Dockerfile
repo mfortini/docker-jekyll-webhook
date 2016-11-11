@@ -3,9 +3,9 @@ MAINTAINER Matteo Fortini <matteo.fortini@gmail.com>
 
 # Install required software
 RUN apt-get update && \
-    apt-get install -y git nginx npm ruby-dev 
+    apt-get install -y git nginx npm ruby-dev libcurl3
 RUN npm install -g github-webhook
-RUN gem install jekyll rouge jekyll-paginate jekyll-sitemap jekyll-feed
+RUN gem install bundle
 
 # Configure installed software
 RUN ln -s /usr/bin/nodejs /usr/bin/node && \
