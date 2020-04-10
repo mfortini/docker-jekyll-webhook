@@ -9,6 +9,7 @@ git checkout $BRANCH
 git reset --hard
 git pull origin $BRANCH
 gem install bundle
+rm Gemfile.lock
 bundle update
 
 bundle exec jekyll build --destination /site
